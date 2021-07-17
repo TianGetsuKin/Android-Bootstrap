@@ -1,7 +1,7 @@
 package com.beardedhen.androidbootstrap.api.defaults;
 
 import android.content.Context;
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 import com.beardedhen.androidbootstrap.R;
 import com.beardedhen.androidbootstrap.api.attributes.BootstrapBrand;

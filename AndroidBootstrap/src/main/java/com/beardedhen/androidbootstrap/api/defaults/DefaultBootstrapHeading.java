@@ -1,7 +1,7 @@
 package com.beardedhen.androidbootstrap.api.defaults;
 
 import android.content.Context;
-import android.support.annotation.DimenRes;
+import androidx.annotation.DimenRes;
 
 import com.beardedhen.androidbootstrap.R;
 import com.beardedhen.androidbootstrap.api.attributes.BootstrapHeading;

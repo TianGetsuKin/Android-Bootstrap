@@ -1,6 +1,6 @@
 package com.beardedhen.androidbootstrap.api.view;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.beardedhen.androidbootstrap.api.attributes.BootstrapHeading;
 

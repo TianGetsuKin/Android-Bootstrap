@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion Integer.parseInt(TARGET_SDK_INT)
-    buildToolsVersion "25.0.3"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.fractalwrench.androidbootstrap.sample"
@@ -23,14 +23,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile project (':AndroidBootstrap') // replace with Maven dependency in your app
+    implementation project (':AndroidBootstrap') // replace with Maven dependency in your app
 
-    compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:support-annotations:25.3.1'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.annotation:annotation:1.0.0'
 }
